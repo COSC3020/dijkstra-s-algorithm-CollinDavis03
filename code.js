@@ -31,7 +31,7 @@ function dijkstra(graph, sourceNode) {
                 const newDistance = distances[closestNode] + graph[closestNode][neighbor];
                 if (newDistance < distances[neighbor]) {
                     distances[neighbor] = newDistance;
-                    previous[neighbor] = closetNode; 
+                    previous[neighbor] = closestNode; 
                 }
             }
         }
