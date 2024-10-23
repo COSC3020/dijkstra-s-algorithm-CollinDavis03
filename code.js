@@ -16,7 +16,7 @@ function dijkstra(graph, sourceNode) {
 
     while (nodesVisit.length > 0) { 
         //Find unvisited nodes with the shortest distance 
-        let closestNode = nodeVisit.reduce((closest, node) => 
+        let closestNode = nodesVisit.reduce((closest, node) => 
             distances[node] < distances[closest] ? node : closest);
 
         //Remove the closest node
