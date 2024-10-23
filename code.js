@@ -12,7 +12,7 @@ function dijkstra(graph, sourceNode) {
     distances[sourceNode] = 0; 
 
     //Create something for nodes to visit
-    const nodesVisit = object.keys(graph);
+    const nodesVisit = Object.keys(graph);
 
     while (nodesVisit.length > 0) { 
         //Find unvisited nodes with the shortest distance 
