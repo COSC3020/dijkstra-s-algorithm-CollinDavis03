@@ -30,7 +30,7 @@ We know that when it comes to finding the closest nodes in this code and finding
 
 Our code also has to update the distances once they have been found by the neighboring node. This time would be $O(E)$. E is the edges in the code. 
 
-The time complexity for the vertices would be $O|V^2|$. Everything combined it would be $O((V^2)+E)$ or $O((|E| + |V|)log|V|)$
+The time complexity for the vertices would be $O|V^2|$. Everything combined it would be $O(|V|^2+|E|)$ or 
 
 
 ## Sources:
