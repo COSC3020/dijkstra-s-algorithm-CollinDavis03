@@ -1,10 +1,12 @@
+//I wrote all of this code independently after watching the video I listed. The only thing from the video is my comments on what I need to do. 
 function dijkstra(graph, sourceNode) {
     //Initialize the distances and nodes/previous
     const distances = {}; 
     const previous = {}; 
     const visited = new Set(); 
 
-    //Set initial to infinity and sourceNode to 0 
+    //Set initial to infinity and sourceNode to 0
+    //I borrowed this from Caden but shortened it from him because it would not work for my code and his code was different than mine.
     for (let node in graph) {
         distances[node] = Infinity;
         previous[node] = null; 
