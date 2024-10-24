@@ -8,6 +8,7 @@ let graphAnswer = [];
 let startNodes = [];
 
 // Graphs are of the form [ [set of nodes], [set of edges] ] where edges are lists of length 3: [u, v, weight]
+// I borrowed the graph examples from Cian and Caden because I had no clue what to test it on and make sure my code worked. 
 graphs[0] = [ // Example from slides
     [0, 1, 2, 3, 4, 5, 6, 7],
     [
@@ -76,7 +77,7 @@ graphs[5] = [ // Disconnected graph with two paths to node 1
 ];
 graphAnswer[5] = [0, 2, 1, undefined];
 startNodes[5] = 0;
-
+// All of this was my own following the logic of Cian and Caden's code
 // Transform input graph format into the one expected by dijkstra()
 function transformGraph(graph) {
     const [nodes, edges] = graph;
