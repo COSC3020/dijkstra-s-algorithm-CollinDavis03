@@ -1,5 +1,10 @@
 //I wrote all of this code independently after watching the video I listed. The only thing from the video is my comments on what I need to do. 
 function dijkstra(graph, sourceNode) {
+    // Test Empty graph
+    if (Object.keys(graph).length == 0) {
+        return []; 
+    }
+    
     //Initialize the distances and nodes/previous
     const distances = {}; 
     const previous = {}; 
