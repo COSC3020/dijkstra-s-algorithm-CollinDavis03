@@ -77,6 +77,10 @@ graphs[5] = [ // Disconnected graph with two paths to node 1
 ];
 graphAnswer[5] = [0, 2, 1, undefined];
 startNodes[5] = 0;
+
+graphs[6] = [ [], []]; //Empty graph Test
+graphAnswer[6] = []; 
+startNodes[6] = 0; 
 // All of this was my own following the logic of Cian and Caden's code
 // Transform input graph format into the one expected by dijkstra()
 function transformGraph(graph) {
